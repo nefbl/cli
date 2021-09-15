@@ -18,6 +18,19 @@
 ## Issues
 使用的时候遇到任何问题或有好的建议，请点击进入[issue](https://github.com/nefbl/cli/issues)！
 
+## How to use?
+首先你需要通过命令行安装cli，就像这样：
+
+```
+npm install -g @nefbl/cli
+```
+
+然后，就可以在命令行中使用了。你可以在命令行执行下面的命令来获得帮助：
+
+```
+nefbl --help
+```
+
 开源协议
 ---------------------------------------
 [MIT](https://github.com/nefbl/cli/blob/master/LICENSE)
