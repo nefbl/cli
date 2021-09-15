@@ -1,0 +1,18 @@
+{
+  "name": "@nefbl/cli",
+  "version": "0.1.0-alpha.0",
+  "description": "nefbl辅助命令",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nefbl/cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nefbl/cli/issues"
+  },
+  "keywords": [
+    "framework",
+    "api",
+    "nefbl"
+  ],
+  "homepage": "https://github.com/nefbl/cli#readme"
+}
