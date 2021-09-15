@@ -1,0 +1,70 @@
+#!/usr/bin/env node
+
+'use strict';
+
+process.title = 'nefbl-cli';
+
+// 来自node包的资源
+const hai2007_nodejs = require('@hai2007/nodejs');
+
+
+// 本地资源
+const pkg = require('../package.json');
+const options = require('./options');
+
+// 组装好缩写和全写的映射
+let shortHands = {};
+for (let key in options.config) {
+    if (options.config[key].short) shortHands["-" + options.config[key].short] = "--" + key;
+}
+
+// 获取命令行参数
+const parsed = hai2007_nodejs.option(shortHands, process.argv);
+
+const terminal = parsed.__terminal__[0];
+
+// 如果创建脚手架项目
+if (terminal == 'create') {
+
+
+
+}
+
+// 否则
+else {
+
+    if ('version' in parsed) {
+
+        // 打印版本号
+        console.log(pkg.version);
+
+    } else if ('help' in parsed) {
+
+        let commandOption = options.command[parsed.help[0]];
+        if (commandOption) {
+
+            let configs = "";
+            for (let item of commandOption.config) {
+                configs += `【${options.config[item].info}】 ${options.config[item].demo}\n`;
+            }
+
+            let command = `
+   【 ${commandOption.info}】 ${commandOption.demo}
+
+    下面是可选的配置项：
+    ${configs}
+    `;
+
+            console.log(command);
+        } else {
+            console.log(options.help);
+        }
+
+    } else {
+
+        // 打印帮助信息
+        console.log(options.help);
+
+    }
+
+}
