@@ -1,6 +1,6 @@
 {
   "name": "@nefbl/cli",
-  "version": "0.1.0-alpha.1",
+  "version": "0.1.0",
   "description": "nefbl辅助命令",
   "repository": {
     "type": "git",
@@ -19,7 +19,8 @@
   ],
   "dependencies": {
     "@hai2007/nodejs": "^1.1.0",
-    "@hai2007/tool": "^0.9.0"
+    "@hai2007/tool": "^0.9.0",
+    "inquirer": "^8.1.2"
   },
   "homepage": "https://github.com/nefbl/cli#readme"
 }
