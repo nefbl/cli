@@ -2,3 +2,9 @@ v0.1.0:
     date:2021-10-01
     changes:
       -  初始化版本
+v0.2.0:
+    date:2021-10-10
+    changes:
+      -  新增了内置指令：ui-bind+ui-on+ui-model
+      -  新增js处理loader和promise兼容文件
+      -  新增启动提示页面等
