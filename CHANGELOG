@@ -8,3 +8,7 @@ v0.2.0:
       -  新增了内置指令：ui-bind+ui-on+ui-model
       -  新增js处理loader和promise兼容文件
       -  新增启动提示页面等
+v0.2.1:
+    date:2021-11-02
+    changes:
+      -  原本的内置指令抽离到开源项目SproutUI（https://hai2007.github.io/SproutUI）中
