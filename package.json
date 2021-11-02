@@ -9,6 +9,8 @@
   "bin": {
     "nefbl": "bin/run"
   },
+  "author": "你好2007",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/nefbl/cli/issues"
   },
