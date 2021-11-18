@@ -12,3 +12,7 @@ v0.2.1:
     date:2021-11-02
     changes:
       -  原本的内置指令抽离到开源项目SproutUI（https://hai2007.github.io/SproutUI）中
+v0.2.2:
+    date:2021-11-18
+    changes:
+      -  nefbl升级（优化了一些重要的问题）
