@@ -24,3 +24,8 @@ v0.3.1:
     date:2021-12-09
     changes:
       -  使用@nefbl/pack打包的原型基本指令等使用sprout-ui提供的
+v0.3.2:
+    date:2021-12-09
+    changes:
+      -  创建项目命令提高交互体验
+      -  新增 ```--force``` 强制命令

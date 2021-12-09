@@ -29,10 +29,13 @@ const terminal = parsed.__terminal__[0];
 // 如果创建脚手架项目
 if (terminal == 'create') {
 
-    let projectName = parsed.__terminal__[1];
-
     // 先获取参数
     inquirer.prompt([{
+        type: 'input',
+        name: 'name',
+        message: '请输入项目英文名',
+        default: 'default'
+    }, {
         type: 'input',
         name: 'description',
         message: '请输入项目描述',
@@ -40,10 +43,12 @@ if (terminal == 'create') {
     }, {
         type: 'rawlist',
         name: 'kind',
-        message: '',
+        message: '请选择使用的打包工具',
         choices: ['webpack', '@nefbl/pack'],
-        default: 0
+        default: 1
     }]).then(answers => {
+
+        let projectName = answers.name;
 
         let typeName = {
             "webpack": "WebPack",
@@ -52,6 +57,23 @@ if (terminal == 'create') {
 
         let sourcePath = nodejs.fullPath('../' + typeName, __dirname);
         let targetPath = nodejs.fullPath('./' + projectName, process.cwd());
+
+        // 判断目标路径是否已经存在内容
+        if (fs.existsSync(targetPath)) {
+
+            // 如果强制新建
+            if (parsed.force) {
+
+                nodejs.log('\n目标新建位置已经存在内容，因此在新建前，先进行了强制删除');
+                nodejs.deleteSync(targetPath);
+            }
+
+            // 否则，提示错误
+            else {
+                nodejs.error('\n新建失败，由于目标新建位置已经存在内容：' + targetPath + "\n");
+                return;
+            }
+        }
 
         // 复制项目到命令行所在位置
         nodejs.copySync(sourcePath, targetPath);
@@ -72,6 +94,8 @@ if (terminal == 'create') {
             fs.writeFileSync(targetFile, fileContent);
 
         }
+
+        nodejs.log('\n新建成功：' + targetPath + "\n");
 
     });
 
