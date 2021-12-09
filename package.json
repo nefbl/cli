@@ -1,6 +1,6 @@
 {
   "name": "@nefbl/cli",
-  "version": "0.2.2",
+  "version": "0.3.0",
   "description": "nefbl辅助命令",
   "repository": {
     "type": "git",
@@ -17,7 +17,8 @@
   "keywords": [
     "framework",
     "cli",
-    "nefbl"
+    "nefbl",
+    "pack"
   ],
   "dependencies": {
     "@hai2007/nodejs": "^2.0.1",

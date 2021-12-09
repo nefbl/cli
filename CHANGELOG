@@ -16,3 +16,7 @@ v0.2.2:
     date:2021-11-18
     changes:
       -  nefbl升级（优化了一些重要的问题）
+v0.3.0:
+    date:2021-12-09
+    changes:
+      -  打包工具新增@nefbl/pack（目前只支持dev模式）

@@ -37,9 +37,20 @@ if (terminal == 'create') {
         name: 'description',
         message: '请输入项目描述',
         default: ''
+    }, {
+        type: 'rawlist',
+        name: 'kind',
+        message: '',
+        choices: ['webpack', '@nefbl/pack'],
+        default: 0
     }]).then(answers => {
 
-        let sourcePath = nodejs.fullPath('../Copy-project', __dirname);
+        let typeName = {
+            "webpack": "WebPack",
+            "@nefbl/pack": "NefblPack"
+        }[answers.kind];
+
+        let sourcePath = nodejs.fullPath('../' + typeName, __dirname);
         let targetPath = nodejs.fullPath('./' + projectName, process.cwd());
 
         // 复制项目到命令行所在位置
