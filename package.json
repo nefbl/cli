@@ -1,6 +1,6 @@
 {
   "name": "@nefbl/cli",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "nefbl辅助命令",
   "repository": {
     "type": "git",

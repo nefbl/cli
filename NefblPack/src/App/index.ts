@@ -1,4 +1,4 @@
-import { Component } from '../lib/nefbl'
+import { Component } from 'nefbl'
 
 import style from './index.scss'
 import template from './index.html'

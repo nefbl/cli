@@ -6,5 +6,10 @@ module.exports = {
     entry: './src/main.ts',
 
     // 打包出口
-    output: 'build/main@v' + pkg.version + '.js'
+    output: 'build/main@v' + pkg.version + '.js',
+
+    // 对导入路径重定向
+    redirect: {
+        'nefbl': "./src/lib/nefbl.js"
+    }
 };

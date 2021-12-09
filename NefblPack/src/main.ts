@@ -1,4 +1,4 @@
-import { platform } from './lib/nefbl.js'
+import { platform } from 'nefbl'
 import normalize from "@hai2007/style/normalize.css"
 
 // 兼容文件
