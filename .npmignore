@@ -4,4 +4,6 @@
 node_modules
 .vscode
 test
-Copy-project/build
+NefblPack/build/*
+!NefblPack/build/.gitkeep
+WebPack/build/*

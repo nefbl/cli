@@ -13,6 +13,6 @@
     "sprout-ui": "^0.2.0"
   },
   "devDependencies": {
-    "@nefbl/pack": "^0.2.0"
+    "@nefbl/pack": "^0.2.1"
   }
 }

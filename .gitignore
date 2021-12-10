@@ -5,3 +5,6 @@ node_modules
 .vscode
 test/*
 !test/.gitkeep
+NefblPack/build/*
+!NefblPack/build/.gitkeep
+WebPack/build/*
