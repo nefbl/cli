@@ -10,9 +10,9 @@
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
     "nefbl": "^0.2.6",
-    "sprout-ui": "^0.2.0"
+    "sprout-ui": "^0.2.1"
   },
   "devDependencies": {
-    "@nefbl/pack": "^0.2.1"
+    "@nefbl/pack": "^0.3.0"
   }
 }

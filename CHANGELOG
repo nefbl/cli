@@ -33,3 +33,7 @@ v0.3.3:
     date:2021-12-10
     changes:
       -  使用@nefbl/pack打包的原型新增build命令
+v0.3.5:
+    date:2021-12-11
+    changes:
+      -  使用@nefbl/pack打包的原型新增懒加载功能
