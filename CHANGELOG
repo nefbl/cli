@@ -41,3 +41,7 @@ v0.3.6:
     date:2021-12-11
     changes:
       -  使用@nefbl/pack打包的原型新增压缩
+v0.3.7:
+    date:2021-12-12
+    changes:
+      -  使用@nefbl/pack打包的原型对入口进行灵活配置
