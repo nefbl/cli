@@ -44,15 +44,16 @@ if (terminal == 'create') {
         type: 'rawlist',
         name: 'kind',
         message: '请选择使用的打包工具',
-        choices: ['webpack', '@nefbl/pack'],
-        default: 1
+        choices: ['webpack', '@nefbl/pack','etcpack'],
+        default: 2
     }]).then(answers => {
 
         let projectName = answers.name;
 
         let typeName = {
             "webpack": "WebPack",
-            "@nefbl/pack": "NefblPack"
+            "@nefbl/pack": "NefblPack",
+            "etcpack": "EtcPack"
         }[answers.kind];
 
         let sourcePath = nodejs.fullPath('../' + typeName, __dirname);
