@@ -21,7 +21,7 @@
     "@babel/preset-typescript": "^7.16.0",
     "@etcpack/plain-loader": "^0.1.0",
     "@etcpack/scss-loader": "^0.1.2",
-    "etcpack": "^0.4.1",
+    "etcpack": "^0.5.2",
     "terser": "^5.10.0",
     "tslib": "^2.3.1"
   }
