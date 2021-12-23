@@ -80,7 +80,7 @@ if (terminal == 'create') {
         nodejs.copySync(sourcePath, targetPath);
 
         // 修改项目参数
-        for (let item of ["index.html", "package.json", 'package-lock.json']) {
+        for (let item of ["index.html", "package.json"]) {
 
             let targetFile = nodejs.fullPath('./' + projectName + "/" + item, process.cwd());
 
