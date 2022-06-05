@@ -3,16 +3,17 @@
   "version": "0.1.0",
   "description": "project-description-will-replace",
   "scripts": {
-    "build": "pack_pkg --config pack.prod.js",
+    "build": "nodejs -e build && pack_pkg --config pack.prod.js",
     "dev": "pack_dev --config pack.dev.js"
   },
   "dependencies": {
     "@hai2007/polyfill": "^0.2.0",
     "@hai2007/style": "^0.3.0",
     "nefbl": "^0.2.6",
-    "sprout-ui": "^0.2.1"
+    "sprout-ui": "^0.3.0"
   },
   "devDependencies": {
-    "@nefbl/pack": "^0.4.1"
+    "@hai2007/nodejs": "^3.0.1",
+    "@nefbl/pack": "^0.5.0"
   }
 }

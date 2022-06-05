@@ -33,4 +33,4 @@ nefbl --help
 ---------------------------------------
 [MIT](https://github.com/nefbl/cli/blob/master/LICENSE)
 
-Copyright (c) 2021-2022 [hai2007](https://hai2007.gitee.io/sweethome/) 走一步，再走一步。
+Copyright (c) 2021-2022 [hai2007](https://hai2007.github.io/SweetHome/) 走一步，再走一步。
